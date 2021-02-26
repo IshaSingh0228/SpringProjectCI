@@ -113,7 +113,7 @@ sshagent(['7c8e5d44-430a-4236-a2b9-b0b47f674381']){
 
 }
 post{
-failure {  
+success {  
              mail bcc: '', body: "<b>Failure</b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br>Stage Name: $last_started <br> URL de build: ${env.BUILD_URL}", cc: '', charset: 'UTF-8', from: '', mimeType: 'text/html', replyTo: '', subject: "ERROR CI: Project name -> ${env.JOB_NAME}", to: "thesinghanias@gmail.com";  
          }  
  
