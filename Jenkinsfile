@@ -42,7 +42,7 @@ last_started=env.STAGE_NAME
             script{
             last_started=env.STAGE_NAME
             }
-              withSonarQubeEnv('sonar-server') {
+              withSonarQubeEnv('sonar-for-spring') {
                 sh 'java -version'
                 sh 'mvn verify sonar:sonar'
          
