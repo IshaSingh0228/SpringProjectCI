@@ -105,8 +105,8 @@ steps{
 script{
 last_started=env.STAGE_NAME
 }
-sshagent(['7c8e5d44-430a-4236-a2b9-b0b47f674381']){
-                    sh 'scp -r C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/booking_sonargate/war_package_download/*.jar ubuntu@13.126.109.105:/home/ubuntu/artifacts'
+sshagent(['916e53a6-1627-4140-ab0d-7762195972ec']){
+                    sh 'scp -r /var/jenkins_home/workspace/spring-pipeline/war_package_download/*.jar ubuntu@13.232.126.40:/home/ubuntu/artifacts'
         }
 }
 }
