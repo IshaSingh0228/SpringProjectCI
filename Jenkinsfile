@@ -68,7 +68,7 @@ last_started=env.STAGE_NAME
             last_started=env.STAGE_NAME
             }
     rtUpload (
-    serverId: 'ARTIFACTORY_SERVER',
+    serverId: 'ARTIFACTORY-SERVER',
     spec: '''{
           "files": [
             {
@@ -86,7 +86,7 @@ script{
 last_started=env.STAGE_NAME
 }
 rtDownload (
-    serverId: 'ARTIFACTORY_SERVER',
+    serverId: 'ARTIFACTORY-SERVER',
     spec: '''{
           "files": [
             {
